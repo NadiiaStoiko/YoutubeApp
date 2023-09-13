@@ -1,0 +1,16 @@
+<mat-card class="video-card">
+  <video [src] ="videoItem.videoUrl" controls class="video-item"></video>
+      <div class="wrapper">
+        <mat-card-title class="video-title" >
+          <div>{{ videoItem.title }}</div>
+        </mat-card-title>
+        <div class="video-author"><p>{{ videoItem.author }}</p></div>
+        <mat-card-subtitle class="video-date">
+          {{ videoItem.uploadTime | date:'longDate' }}
+        </mat-card-subtitle>
+
+      </div>
+    <mat-card-content>
+      <p class="video-descr">{{videoItem.description}}</p>
+    </mat-card-content>
+</mat-card>

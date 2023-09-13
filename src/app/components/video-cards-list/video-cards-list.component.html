@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="search-section">
+    <form name="searchForm" class="search-field">
+      <input
+        class="search"
+        type="text"
+        #search
+        placeholder="Search Youtube"
+        (keydown)="inputHandler($event)"
+      />
+      <button class="search-button" alt="search-videos" (click)="searchHandler(search.value)">Show Results</button>
+    </form>
+  </div>
+<div class="filter-wrapper">
+  <app-videos-filter (selectItemEvent)="addFilterOption($event)"></app-videos-filter>
+</div>
+  <div class="videos-list" *ngIf="!isLoading">
+    <div class="videos-list-item" *ngFor="let videoItem of vidiosList">
+      <app-video-item-card [inputValue]="inputValue" [videoItem]="videoItem"></app-video-item-card>
+    </div>
+  </div>
+  <div class="loading-section" *ngIf="isLoading">
+    ...Loading
+  </div>
+</div>

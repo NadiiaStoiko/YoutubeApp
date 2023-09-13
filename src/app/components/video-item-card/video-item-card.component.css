@@ -1,0 +1,45 @@
+.video-card {
+  border: var(--light-grey) 1px solid;
+  box-shadow: 0px 8px 24px 0px #0000000D;
+}
+
+.video-item  {
+  height: 217px;
+  background-size: cover;
+  max-width: 350px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.video-date {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-grey);
+  margin-bottom: 20px;
+  font-family: Montserrat;
+}
+
+.video-author {
+font-size: 16px;
+font-family: Montserrat;
+}
+
+.video-title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Montserrat;
+  height: 35px;
+}
+
+.video-descr {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Montserrat;
+  color: var(--dark-grey);
+  height: 50px;
+}

@@ -1,0 +1,7 @@
+<div class="select-wrapper">
+  <select class="select" (change)="selectFilter($event)">
+    <option value = "">Select filter option</option>
+    <option *ngFor = "let option of filters" [value]="option.value"
+            [selected]="selectedFilter === option.value">{{ option.viewValue }}</option>
+  </select>
+</div>

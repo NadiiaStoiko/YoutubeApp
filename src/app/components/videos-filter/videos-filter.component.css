@@ -1,0 +1,8 @@
+.select-wrapper {
+  border: 0;
+  padding-right: 10px ;
+  .select {
+    width: 250px;
+    padding: 10px;
+  }
+}
